@@ -3,8 +3,7 @@ import streamlit as st
 from pythainlp.translate import Translate
 import nltk
 import requests
-#nltk.download('wordnet')
-#nltk.download('omw-1.4')
+
 
 #python -m nltk.downloader all
 from collections import OrderedDict 
@@ -14,6 +13,8 @@ from annotated_text import annotated_text
 @st.cache
 def load_model():
     th2en = Translate('th', 'en')
+    nltk.download('wordnet')
+    nltk.download('omw-1.4')
     return (th2en)
 
 st.set_page_config(page_title="ค้นคำ", page_icon="open-book.png")

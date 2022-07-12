@@ -4,6 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pythainlp = "*"
+pandas = "*"
+nltk = "*"
+transformers = "*"
+fairseq = "*"
+sacremoses = "*"
+sentencepiece = "*"
 
 [dev-packages]
 
