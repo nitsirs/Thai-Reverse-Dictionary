@@ -11,6 +11,7 @@ transformers = "*"
 fairseq = "*"
 sacremoses = "*"
 sentencepiece = "*"
+st-annotated-text = "*"
 
 [dev-packages]
 
